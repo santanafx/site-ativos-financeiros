@@ -1,21 +1,27 @@
 .carouselPriceContainerBg {
-    background-color: red;
-    width: calc(60px*7);
+    background-color: var(--cinza);
+    width: calc(160px*7);
     margin: auto;
     overflow: hidden;
+    height: 30px;
+    outline: var(--cinza-escuro) solid 1px;
 }
 
 .carouselPriceContainer {
     display: flex;
-    width: calc(60px*14);
-    animation: slide 5s linear infinite;
+    width: calc(160px*14);
+    animation: slide 30s linear infinite;
+}
 
+.carouselPriceContainer:hover {
+    animation-play-state: paused;
 }
 
 .carouselPriceContainer div {
     margin-right: 10px;
-    width: 50px;
+    width: 150px;
     background-color: green;
+    height: 30px;
 }
 
 @keyframes slide {
@@ -24,6 +30,6 @@
     }
 
     to {
-        transform: translateX(calc(-60px*7));
+        transform: translateX(calc(-160px*7));
     }
 }

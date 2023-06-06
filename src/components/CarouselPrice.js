@@ -8,10 +8,8 @@ export const CarouselPrice = () => {
     return (
         <section className='carouselPriceContainerBg'>
             <div className='carouselPriceContainer'>
-
                 {array.map(element => (<div key={element.nome}>{element.nome}</div>))}
                 {array.map(element => (<div key={element.nome}>{element.nome}</div>))}
-
             </div>
         </section>
     )

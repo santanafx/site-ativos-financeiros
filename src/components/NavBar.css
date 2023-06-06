@@ -1,8 +1,11 @@
 .navBarContainerBg {
-    max-width: 1430px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+}
+
+.navBarCarousel {
+    background-color: var(--cinza);
+    border: 1px solid var(--cinza-escuro);
 }
 
 .navBarContainer {
@@ -15,7 +18,9 @@
 
 .navBarSearch {
     flex-basis: 20%;
-    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navBarSearch div {
@@ -55,7 +60,7 @@
 .navBarLogin {
     flex-basis: 20%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .navBarLogin div {
@@ -73,4 +78,10 @@
 
 .navBarLogin div:hover {
     opacity: 0.5;
+}
+
+.navBarDropDownMenu {
+    background-color: var(--preto);
+    width: 100%;
+
 }

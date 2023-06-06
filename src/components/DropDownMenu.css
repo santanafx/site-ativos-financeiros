@@ -1,0 +1,67 @@
+.dropDownMenuContainerBg {
+    color: var(--branco);
+    width: 100%;
+}
+
+.dropDownMenuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.dropDownMenuIcon {
+    flex-basis: 20%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropDownMenuIcon div {
+
+    background-color: var(--preto);
+    border-radius: 8px;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropDownMenuIcon div:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 2px solid var(--preto);
+    opacity: 0.5;
+}
+
+.dropDownMenuOpt {
+    flex-basis: 60%;
+}
+
+.dropDownMenuOpt div {
+    display: flex;
+    margin-left: 30px;
+}
+
+.dropDownMenuOpt div div {
+    margin-left: 0;
+    font-weight: 100;
+    cursor: pointer;
+    flex-basis: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.dropDownMenuOpt div div:hover {
+    font-weight: 500;
+
+}
+
+.dropDownMenuEmpty {
+    flex-basis: 20%;
+}
