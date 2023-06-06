@@ -105,4 +105,17 @@
 
 .navBarCarouselNews {
     background-color: var(--verde);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navBarCarouselNews h2 {
+    position: absolute;
+    color: var(--branco);
+    left: 0;
+    font-size: 0.9rem;
+    z-index: 1000;
+    background-color: var(--verde);
+    padding: 5px 0 5px 230px;
 }

@@ -11,6 +11,7 @@ export const CarouselNews = () => {
                 {array.map(element => (<div key={element.nome}>{element.nome}</div>))}
                 {array.map(element => (<div key={element.nome}>{element.nome}</div>))}
             </div>
+
         </section>
     )
 }

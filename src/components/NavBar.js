@@ -30,7 +30,8 @@ export const NavBar = () => {
             <div className='navBarDropDownMenu'>
                 <DropDownMenu />
             </div>
-            <div className='navBarDropDownMenuNews'>
+            <div className='navBarCarouselNews'>
+                <h2>ÚLTIMAS NOTÍCIAS</h2>
                 <CarouselNews />
             </div>
         </section>
