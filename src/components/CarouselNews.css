@@ -1,0 +1,35 @@
+.carouselNewsContainerBg {
+    background-color: var(--cinza);
+    width: calc(160px*7);
+    margin: auto;
+    overflow: hidden;
+    height: 30px;
+
+}
+
+.carouselNewsContainer {
+    display: flex;
+    width: calc(160px*14);
+    animation: slide 30s linear infinite;
+}
+
+.carouselNewsContainer:hover {
+    animation-play-state: paused;
+}
+
+.carouselNewsContainer div {
+    margin-right: 10px;
+    width: 150px;
+    background-color: green;
+    height: 30px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-160px*7));
+    }
+}

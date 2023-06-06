@@ -53,8 +53,10 @@
     font-weight: 100;
     cursor: pointer;
     flex-basis: 90px;
+    width: 90px;
     display: flex;
     justify-content: center;
+
 }
 
 .dropDownMenuOpt div div:hover {

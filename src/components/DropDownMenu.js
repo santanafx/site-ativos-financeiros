@@ -24,7 +24,6 @@ export const DropDownMenu = () => {
                 <div className='dropDownMenuEmpty'>
                     <div></div>
                 </div>
-
             </nav>
         </section>
     )

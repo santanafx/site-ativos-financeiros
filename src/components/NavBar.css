@@ -63,7 +63,22 @@
     justify-content: flex-start;
 }
 
-.navBarLogin div {
+.navBarLogin div:nth-child(1) {
+    margin: 0 5px;
+    color: var(--preto);
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid var(--preto);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 75px;
+}
+
+.navBarLogin div:nth-child(2) {
     margin: 0 5px;
     background-color: var(--preto);
     color: var(--branco);
@@ -74,6 +89,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 0.8rem;
+    width: 75px;
 }
 
 .navBarLogin div:hover {
@@ -84,4 +101,8 @@
     background-color: var(--preto);
     width: 100%;
 
+}
+
+.navBarCarouselNews {
+    background-color: var(--verde);
 }
