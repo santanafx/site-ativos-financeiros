@@ -25,25 +25,29 @@ function App() {
 
   const API_KEY = 'eTSDsPcCdn1hcxPgzLghFjIFDbdyoHnC';
   const filter = 'financial';
-  const query = 'charles'
+  const query = 'gold'
 
-  // let local = '';
+  let local = '';
+  local = window.localStorage.getItem('inf');
   React.useEffect(() => {
 
-    fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&fq=${filter}&api-key=${API_KEY}`)
-      .then(res => res.json())
-      .then(data => setImgNews(data.response.docs[0].multimedia[0].url))
-    // local = window.localStorage.getItem('img')
+    if (local === null) {
+      fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&fq=${filter}&api-key=${API_KEY}`)
+        .then(res => res.json())
+        .then(data => window.localStorage.setItem('inf', JSON.stringify(data.response.docs)));
+    }
+
 
   }, [])
+
 
 
   return (
     <div>
 
-      <img src={`http://www.nytimes.com/${imgNews}`} alt="" />
-      {/* {console.log(local)} */}
-      <Grafico />
+      {/* <img src={`http://www.nytimes.com/${local.response.docs[0].multimedia[0].url}`} alt="" /> */}
+      {console.log(JSON.parse(local))}
+
     </div>
   );
 }
