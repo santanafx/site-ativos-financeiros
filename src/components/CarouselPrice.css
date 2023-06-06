@@ -1,0 +1,29 @@
+.carouselPriceContainerBg {
+    background-color: red;
+    width: calc(60px*7);
+    margin: auto;
+    overflow: hidden;
+}
+
+.carouselPriceContainer {
+    display: flex;
+    width: calc(60px*14);
+    animation: slide 5s linear infinite;
+
+}
+
+.carouselPriceContainer div {
+    margin-right: 10px;
+    width: 50px;
+    background-color: green;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-60px*7));
+    }
+}

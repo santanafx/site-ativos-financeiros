@@ -1,6 +1,7 @@
 import React from 'react';
 import Grafico from '../src/components/Grafico';
 import './App.css';
+import { NavBar } from './components/NavBar';
 
 function App() {
 
@@ -43,12 +44,12 @@ function App() {
 
 
   return (
-    <div>
+    <>
 
-      {/* <img src={`http://www.nytimes.com/${local.response.docs[0].multimedia[0].url}`} alt="" /> */}
-      {console.log(JSON.parse(local))}
+      <NavBar />
+      {/* {console.log(JSON.parse(local))} */}
 
-    </div>
+    </>
   );
 }
 

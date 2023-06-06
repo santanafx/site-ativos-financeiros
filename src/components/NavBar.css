@@ -1,0 +1,76 @@
+.navBarContainerBg {
+    max-width: 1430px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.navBarSearch {
+    flex-basis: 20%;
+    margin-left: 10px;
+}
+
+.navBarSearch div {
+    background-color: var(--preto);
+    border-radius: 8px;
+    color: var(--branco);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navBarSearch div:hover {
+    opacity: 0.5;
+}
+
+.navBarLogo {
+    flex-basis: 60%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navBarLogo:hover {
+    opacity: 0.5;
+}
+
+.navBarLogo span {
+    color: var(--verde);
+}
+
+.navBarLogin {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBarLogin div {
+    margin: 0 5px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBarLogin div:hover {
+    opacity: 0.5;
+}
