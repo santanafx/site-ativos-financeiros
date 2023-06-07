@@ -3,50 +3,64 @@ import './Inicio.css'
 import { MainNews } from '../components/MainNews';
 import { SecundaryNews } from '../components/SecundaryNews';
 import { RestNews } from '../components/RestNews';
+import { Context } from '../context/globalContext';
 
 export const Inicio = () => {
 
-    const [imgNews, setImgNews] = React.useState('');
-    const API_KEY = 'QM1A1RWRLRYIUDUD';
-    const SYMBOL = 'AAPL';
-    let API_CALL = `https://www.alphavantage.co/query?function=NEWS_SENTIMENT&apikey=${API_KEY}`;
-    let local = '';
-    local = window.localStorage.getItem('inf');
-
-    React.useEffect(() => {
-        if (local === null) {
-            fetch(API_CALL).then(resp => resp.json()).then(data => window.localStorage.setItem('inf', JSON.stringify(data)))
-        }
-    }, [])
-
-    let data = JSON.parse(local);
-    const handleNews = (url) => {
-        window.location.href = url;
-    }
-
+    const { data, data2 } = React.useContext(Context);
     return (
         <>
-            <h1 className='inicioTitle'>TOP NEWS</h1>
-            <section className='inicioContainerBg'>
-                {console.log(data)}
-                <div className='inicioContainer'>
-                    <div className='inicioPrincipalNoticia'>
-                        <MainNews data={data} index={0} />
-                    </div>
-                    <div className='inicioSegundaNoticia'>
-                        <SecundaryNews data={data} index={1} />
-                    </div>
-                    <div className='inicioTerceiraNoticia'>
-                        <SecundaryNews data={data} index={2} />
-                    </div>
-                    <div className='inicioQuartaNoticia'>
-                        <RestNews data={data} index={3} />
-                    </div>
-                    <div className='inicioQuintaNoticia'>
-                        <RestNews data={data} index={4} />
-                    </div>
-                </div>
-            </section>
+            {data !== null ?
+                <>
+                    <h1 className='inicioTitle'>TOP NEWS</h1>
+                    <section className='inicioContainerBg'>
+                        <div className='inicioContainer'>
+                            <div className='inicioPrincipalNoticia'>
+                                <MainNews data={data} index={0} />
+                            </div>
+                            <div className='inicioSegundaNoticia'>
+                                <SecundaryNews data={data} index={1} />
+                            </div>
+                            <div className='inicioTerceiraNoticia'>
+                                <SecundaryNews data={data} index={2} />
+                            </div>
+                            <div className='inicioQuartaNoticia'>
+                                <RestNews data={data} index={3} />
+                            </div>
+                            <div className='inicioQuintaNoticia'>
+                                <RestNews data={data} index={4} />
+                            </div>
+                        </div>
+                    </section>
+                </>
+                : <h1>loading</h1>}
+            {data2 !== null ?
+                <>
+                    <h1 className='inicioTitle'>Technology</h1>
+                    <section className='inicioContainerBg'>
+                        <div className='inicioContainer'>
+                            <div className='inicioPrincipalNoticia'>
+                                <MainNews data={data2} index={0} />
+                            </div>
+                            <div className='inicioSegundaNoticia'>
+                                <SecundaryNews data={data2} index={1} />
+                            </div>
+                            <div className='inicioTerceiraNoticia'>
+                                <SecundaryNews data={data2} index={2} />
+                            </div>
+                            <div className='inicioQuartaNoticia'>
+                                <RestNews data={data2} index={3} />
+                            </div>
+                            <div className='inicioQuintaNoticia'>
+                                <RestNews data={data2} index={4} />
+                            </div>
+                        </div>
+                    </section>
+                </>
+                : <h1>loading</h1>}
+
+
+
         </>
     )
 }
