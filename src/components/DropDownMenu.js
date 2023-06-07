@@ -13,12 +13,12 @@ export const DropDownMenu = () => {
                 </div>
                 <div className="dropDownMenuOpt">
                     <div>
-                        <div>Mercados</div>
-                        <div>Listas</div>
+                        <div>Market</div>
+                        <div>Lists</div>
                         <div>Webseries</div>
                         <div>Tech</div>
                         <div>Cripto</div>
-                        <div>Inovação</div>
+                        <div>Inovation</div>
                     </div>
                 </div>
                 <div className='dropDownMenuEmpty'>

@@ -1,0 +1,312 @@
+.inicioContainerBg {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inicioContainer {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inicioPrincipalNoticia {
+    flex-basis: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioPrincipalNoticia img {
+    cursor: pointer;
+    max-width: 600px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.inicioPrincipalNoticia img:hover {
+    opacity: 0.5;
+}
+
+.inicioPrincipalNoticia h6 {
+    margin-bottom: 10px;
+}
+
+.inicioPrincipalNoticia h1 {
+    cursor: pointer;
+}
+
+.inicioPrincipalNoticia h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioPrincipalNoticia h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.inicioPrincipalNoticia h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioPrincipalNoticia p {
+    font-size: 0.8rem;
+
+}
+
+.inicioPrincipalNoticia span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.inicioPrincipalNoticia span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}
+
+.inicioSegundaNoticia {
+    flex-basis: 20%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioSegundaNoticia img {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    align-self: center;
+}
+
+.inicioSegundaNoticia img:hover {
+    opacity: 0.5;
+}
+
+.inicioSegundaNoticia h6 {
+    margin-bottom: 10px;
+}
+
+.inicioSegundaNoticia h1 {
+    cursor: pointer;
+}
+
+.inicioSegundaNoticia h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioSegundaNoticia h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.inicioSegundaNoticia h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioSegundaNoticia p {
+    font-size: 0.8rem;
+
+}
+
+.inicioSegundaNoticia span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.inicioSegundaNoticia span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}
+
+.inicioTerceiraNoticia {
+    flex-basis: 20%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioTerceiraNoticia img {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    align-self: center;
+}
+
+.inicioTerceiraNoticia img:hover {
+    opacity: 0.5;
+}
+
+.inicioTerceiraNoticia h6 {
+    margin-bottom: 10px;
+}
+
+.inicioTerceiraNoticia h1 {
+    cursor: pointer;
+}
+
+.inicioTerceiraNoticia h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioTerceiraNoticia h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.inicioTerceiraNoticia h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioTerceiraNoticia p {
+    font-size: 0.8rem;
+
+}
+
+.inicioTerceiraNoticia span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.inicioTerceiraNoticia span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}
+
+.inicioQuartaNoticia {
+    flex-basis: 20%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioQuartaNoticia img {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    align-self: center;
+}
+
+.inicioQuartaNoticia img:hover {
+    opacity: 0.5;
+}
+
+.inicioQuartaNoticia h6 {
+    margin-bottom: 10px;
+}
+
+.inicioQuartaNoticia h1 {
+    cursor: pointer;
+}
+
+.inicioQuartaNoticia h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioQuartaNoticia h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.inicioQuartaNoticia h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioQuartaNoticia p {
+    font-size: 0.8rem;
+
+}
+
+.inicioQuartaNoticia span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.inicioQuartaNoticia span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}
+
+.inicioQuintaNoticia {
+    flex-basis: 20%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioQuintaNoticia img {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    align-self: center;
+}
+
+.inicioQuintaNoticia img:hover {
+    opacity: 0.5;
+}
+
+.inicioQuintaNoticia h6 {
+    margin-bottom: 10px;
+}
+
+.inicioQuintaNoticia h1 {
+    cursor: pointer;
+}
+
+.inicioQuintaNoticia h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioQuintaNoticia h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.inicioQuintaNoticia h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.inicioQuintaNoticia p {
+    font-size: 0.8rem;
+
+}
+
+.inicioQuintaNoticia span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.inicioQuintaNoticia span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}

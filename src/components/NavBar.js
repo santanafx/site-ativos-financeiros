@@ -23,7 +23,7 @@ export const NavBar = () => {
                     Financial <span>News</span>
                 </div>
                 <div className='navBarLogin'>
-                    <div>Assine</div>
+                    <div>Subscribe</div>
                     <div>Login</div>
                 </div>
             </nav>
@@ -31,7 +31,7 @@ export const NavBar = () => {
                 <DropDownMenu />
             </div>
             <div className='navBarCarouselNews'>
-                <h2>ÚLTIMAS NOTÍCIAS</h2>
+                <h2>LAST NEWS</h2>
                 <CarouselNews />
             </div>
         </section>
