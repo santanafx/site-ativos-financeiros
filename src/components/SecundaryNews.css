@@ -1,0 +1,53 @@
+.secundaryNews img {
+    cursor: pointer;
+    max-width: 500px;
+    min-width: 480px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.secundaryNews img:hover {
+    opacity: 0.5;
+}
+
+.secundaryNews h6 {
+    margin-bottom: 10px;
+}
+
+.secundaryNews h1 {
+    cursor: pointer;
+}
+
+.secundaryNews h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.secundaryNews h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.secundaryNews h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.secundaryNews p {
+    font-size: 0.8rem;
+
+}
+
+.secundaryNews span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.secundaryNews span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}

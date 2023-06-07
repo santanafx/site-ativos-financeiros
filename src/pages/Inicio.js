@@ -1,5 +1,8 @@
 import React from 'react'
 import './Inicio.css'
+import { MainNews } from '../components/MainNews';
+import { SecundaryNews } from '../components/SecundaryNews';
+import { RestNews } from '../components/RestNews';
 
 export const Inicio = () => {
 
@@ -17,56 +20,34 @@ export const Inicio = () => {
     }, [])
 
     let data = JSON.parse(local);
-
     const handleNews = (url) => {
         window.location.href = url;
     }
+
     return (
-        <section className='inicioContainerBg'>
-            {console.log(data)}
-            <div className='inicioContainer'>
-                <div className='inicioPrincipalNoticia'>
-                    <img onClick={() => handleNews(data.feed[0].url)} src={data.feed[0].banner_image} alt="" />
-                    <h6>{data.feed[0].topics[0].topic}</h6>
-                    <h1 onClick={() => handleNews(data.feed[0].url)}>{data.feed[0].title}</h1>
-                    <h4 onClick={() => handleNews(data.feed[0].url)}>{data.feed[0].summary}</h4>
-                    <p>Source: {data.feed[0].source}</p>
-                    <span onClick={() => handleNews(`https://${data.feed[0].source_domain}`)}>{data.feed[0].source_domain}</span>
+        <>
+            <h1 className='inicioTitle'>TOP NEWS</h1>
+            <section className='inicioContainerBg'>
+                {console.log(data)}
+                <div className='inicioContainer'>
+                    <div className='inicioPrincipalNoticia'>
+                        <MainNews data={data} index={0} />
+                    </div>
+                    <div className='inicioSegundaNoticia'>
+                        <SecundaryNews data={data} index={1} />
+                    </div>
+                    <div className='inicioTerceiraNoticia'>
+                        <SecundaryNews data={data} index={2} />
+                    </div>
+                    <div className='inicioQuartaNoticia'>
+                        <RestNews data={data} index={3} />
+                    </div>
+                    <div className='inicioQuintaNoticia'>
+                        <RestNews data={data} index={4} />
+                    </div>
                 </div>
-                <div className='inicioSegundaNoticia'>
-                    <img onClick={() => handleNews(data.feed[1].url)} src={data.feed[1].banner_image} alt="" />
-                    <h6>{data.feed[1].topics[0].topic}</h6>
-                    <h1 onClick={() => handleNews(data.feed[1].url)}>{data.feed[1].title}</h1>
-                    <h4 onClick={() => handleNews(data.feed[1].url)}>{data.feed[1].summary}</h4>
-                    <p>Source: {data.feed[1].source}</p>
-                    <span onClick={() => handleNews(`https://${data.feed[1].source_domain}`)}>{data.feed[1].source_domain}</span>
-                </div>
-                <div className='inicioTerceiraNoticia'>
-                    <img onClick={() => handleNews(data.feed[2].url)} src={data.feed[2].banner_image} alt="" />
-                    <h6>{data.feed[2].topics[0].topic}</h6>
-                    <h1 onClick={() => handleNews(data.feed[2].url)}>{data.feed[2].title}</h1>
-                    <h4 onClick={() => handleNews(data.feed[2].url)}>{data.feed[2].summary}</h4>
-                    <p>Source: {data.feed[2].source}</p>
-                    <span onClick={() => handleNews(`https://${data.feed[2].source_domain}`)}>{data.feed[2].source_domain}</span>
-                </div>
-                <div className='inicioQuartaNoticia'>
-                    <img onClick={() => handleNews(data.feed[3].url)} src={data.feed[3].banner_image} alt="" />
-                    <h6>{data.feed[3].topics[0].topic}</h6>
-                    <h1 onClick={() => handleNews(data.feed[3].url)}>{data.feed[3].title}</h1>
-                    <h4 onClick={() => handleNews(data.feed[3].url)}>{data.feed[3].summary}</h4>
-                    <p>Source: {data.feed[3].source}</p>
-                    <span onClick={() => handleNews(`https://${data.feed[3].source_domain}`)}>{data.feed[3].source_domain}</span>
-                </div>
-                <div className='inicioQuintaNoticia'>
-                    <img onClick={() => handleNews(data.feed[4].url)} src={data.feed[4].banner_image} alt="" />
-                    <h6>{data.feed[4].topics[0].topic}</h6>
-                    <h1 onClick={() => handleNews(data.feed[4].url)}>{data.feed[4].title}</h1>
-                    <h4 onClick={() => handleNews(data.feed[4].url)}>{data.feed[4].summary}</h4>
-                    <p>Source: {data.feed[4].source}</p>
-                    <span onClick={() => handleNews(`https://${data.feed[4].source_domain}`)}>{data.feed[4].source_domain}</span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 

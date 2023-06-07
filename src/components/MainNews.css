@@ -1,0 +1,53 @@
+.mainNews img {
+    cursor: pointer;
+    max-width: 700px;
+    min-width: 480px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.mainNews img:hover {
+    opacity: 0.5;
+}
+
+.mainNews h6 {
+    margin-bottom: 10px;
+}
+
+.mainNews h1 {
+    cursor: pointer;
+}
+
+.mainNews h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.mainNews h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.mainNews h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.mainNews p {
+    font-size: 0.8rem;
+
+}
+
+.mainNews span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.mainNews span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}

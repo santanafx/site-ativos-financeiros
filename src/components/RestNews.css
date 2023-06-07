@@ -1,0 +1,53 @@
+.restNews img {
+    cursor: pointer;
+    max-width: 480px;
+    min-width: 240px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.restNews img:hover {
+    opacity: 0.5;
+}
+
+.restNews h6 {
+    margin-bottom: 10px;
+}
+
+.restNews h1 {
+    cursor: pointer;
+}
+
+.restNews h1:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.restNews h4 {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.restNews h4:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.restNews p {
+    font-size: 0.8rem;
+
+}
+
+.restNews span {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.restNews span:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+
+}
