@@ -4,6 +4,7 @@ import { MainNews } from '../components/MainNews';
 import { SecundaryNews } from '../components/SecundaryNews';
 import { RestNews } from '../components/RestNews';
 import { Context } from '../context/globalContext';
+import Grafico from '../components/Grafico';
 
 export const Inicio = () => {
 
@@ -36,9 +37,13 @@ export const Inicio = () => {
                 : <h1>loading</h1>}
             {data2 !== null ?
                 <>
+                    {console.log(typeof (data2.feed[0].ticker_sentiment[0].ticker))}
                     <h1 className='inicioTitle'>Technology</h1>
                     <section className='inicioContainerBg'>
                         <div className='inicioContainer'>
+                            <div className='inicioGrafico'>
+                                <Grafico ticker={data2.feed[0].ticker_sentiment[0].ticker} />
+                            </div>
                             <div className='inicioPrincipalNoticia'>
                                 <MainNews data={data2} index={0} />
                             </div>

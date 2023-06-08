@@ -11,8 +11,10 @@ export const MainNews = ({ data, index }) => {
             {/* <h6>{data.feed[0].topics[0].topic}</h6> */}
             <h1 onClick={() => handleNews(data.feed[0].url)}>{data.feed[0].title}</h1>
             <h4 onClick={() => handleNews(data.feed[0].url)}>{data.feed[0].summary}</h4>
-            <p>Source: {data.feed[0].source}</p>
-            <span onClick={() => handleNews(`https://${data.feed[0].source_domain}`)}>{data.feed[0].source_domain}</span>
+            <div>
+                <p>Source: {data.feed[0].source}</p>
+                <span onClick={() => handleNews(`https://${data.feed[0].source_domain}`)}>{data.feed[0].source_domain}</span>
+            </div>
         </div>
     )
 }

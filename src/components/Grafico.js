@@ -1,10 +1,10 @@
 // TradingViewWidget.jsx
-import './Grafico.css'
+
 import React, { useEffect, useRef } from 'react';
 
 let tvScriptLoadingPromise;
 
-export default function Grafico() {
+export default function TradingViewWidget({ ticker }) {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -28,24 +28,20 @@ export default function Grafico() {
       return () => onLoadScriptRef.current = null;
 
       function createWidget() {
-        if (document.getElementById('tradingview_ed34b') && 'TradingView' in window) {
+        if (document.getElementById('tradingview_1bfb1') && 'TradingView' in window) {
           new window.TradingView.widget({
-            autosize: true,
-            symbol: "GOOG",
-            interval: "D",
-            timezone: "Etc/UTC",
-            theme: "dark",
+            width: 480,
+            height: 480,
+            symbol: ticker,
+            interval: "1",
+            timezone: "America/Sao_Paulo",
+            theme: "light",
             style: "1",
             locale: "en",
             toolbar_bg: "#f1f3f6",
-            enable_publishing: true,
-            withdateranges: true,
-            hide_side_toolbar: false,
+            enable_publishing: false,
             allow_symbol_change: true,
-            details: true,
-            hotlist: true,
-            calendar: true,
-            container_id: "tradingview_ed34b"
+            container_id: "tradingview_1bfb1"
           });
         }
       }
@@ -55,7 +51,7 @@ export default function Grafico() {
 
   return (
     <div className='tradingview-widget-container'>
-      <div id='tradingview_ed34b' />
+      <div id='tradingview_1bfb1' />
       <div className="tradingview-widget-copyright">
         <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
       </div>
