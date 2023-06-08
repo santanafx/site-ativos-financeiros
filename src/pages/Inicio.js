@@ -5,93 +5,67 @@ import { SecundaryNews } from '../components/SecundaryNews';
 import { RestNews } from '../components/RestNews';
 import { Context } from '../context/globalContext';
 import Grafico from '../components/Grafico';
+import { FundamentalData } from '../components/FundamentalData';
 
 export const Inicio = () => {
+    const { dataTopNews, dataTechnology, dataIncomeTechnology } = React.useContext(Context);
 
-    const { data, data2 } = React.useContext(Context);
+
     return (
         <>
-            {data !== null ?
+            {dataTopNews !== null ?
                 <>
                     <h1 className='inicioTitle'>TOP NEWS</h1>
                     <section className='inicioContainerBg'>
                         <div className='inicioContainer'>
                             <div className='inicioPrincipalNoticia'>
-                                <MainNews data={data} index={0} />
+                                <MainNews data={dataTopNews} index={0} />
                             </div>
                             <div className='inicioSegundaNoticia'>
-                                <SecundaryNews data={data} index={1} />
+                                <SecundaryNews data={dataTopNews} index={1} />
                             </div>
                             <div className='inicioTerceiraNoticia'>
-                                <SecundaryNews data={data} index={2} />
+                                <SecundaryNews data={dataTopNews} index={2} />
                             </div>
                             <div className='inicioQuartaNoticia'>
-                                <RestNews data={data} index={3} />
+                                <RestNews data={dataTopNews} index={3} />
                             </div>
                             <div className='inicioQuintaNoticia'>
-                                <RestNews data={data} index={4} />
+                                <RestNews data={dataTopNews} index={4} />
                             </div>
                         </div>
                     </section>
                 </>
                 : <h1>loading</h1>}
-            {data2 !== null ?
+            {dataTechnology !== null ?
                 <>
-                    {console.log(typeof (data2.feed[0].ticker_sentiment[0].ticker))}
                     <h1 className='inicioTitle'>Technology</h1>
                     <section className='inicioContainerBg'>
                         <div className='inicioContainer'>
                             <div className='inicioGrafico'>
-                                <Grafico ticker={data2.feed[0].ticker_sentiment[0].ticker} />
+                                <Grafico ticker={dataTechnology.feed[0].ticker_sentiment[0].ticker} />
+                                <FundamentalData dataIncome={dataIncomeTechnology} ticker={dataTechnology.feed[0].ticker_sentiment[0].ticker} />
                             </div>
                             <div className='inicioPrincipalNoticia'>
-                                <MainNews data={data2} index={0} />
+                                <MainNews data={dataTechnology} index={0} />
                             </div>
                             <div className='inicioSegundaNoticia'>
-                                <SecundaryNews data={data2} index={1} />
+                                <SecundaryNews data={dataTechnology} index={1} />
                             </div>
                             <div className='inicioTerceiraNoticia'>
-                                <SecundaryNews data={data2} index={2} />
+                                <SecundaryNews data={dataTechnology} index={2} />
                             </div>
                             <div className='inicioQuartaNoticia'>
-                                <RestNews data={data2} index={3} />
+                                <RestNews data={dataTechnology} index={3} />
                             </div>
                             <div className='inicioQuintaNoticia'>
-                                <RestNews data={data2} index={4} />
+                                <RestNews data={dataTechnology} index={4} />
                             </div>
                         </div>
                     </section>
                 </>
                 : <h1>loading</h1>}
 
-
-
         </>
     )
 }
-
-
-  // const API_KEY = 'a1g8RPcpWDua52OpL3dwxuCyM1VpdVFx';
-  // const SYMBOL = 'AMZN';
-  // let API_CALL = `https://api.polygon.io/v2/reference/news?ticker=${SYMBOL}&order=asc&limit=10&apiKey=${API_KEY}`;
-
-  // const fetchApi = () => {
-
-  //   fetch(API_CALL).then(resp => resp.json()).then(data => console.log(data.results[0].image_url))
-  // }
-
-
-  // const API_KEY = 'eTSDsPcCdn1hcxPgzLghFjIFDbdyoHnC';
-  // const filter = 'financial';
-  // const query = 'gold'
-
-  // let local = '';
-  // local = window.localStorage.getItem('inf');
-  // React.useEffect(() => {
-
-  //   if (local === null) {
-  //     fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&fq=${filter}&api-key=${API_KEY}`)
-  //       .then(res => res.json())
-  //       .then(data => window.localStorage.setItem('inf', JSON.stringify(data.response.docs)));
-  //   }
-  // }, [])

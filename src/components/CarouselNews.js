@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './CarouselNews.css'
+import { Context } from '../context/globalContext'
 
 export const CarouselNews = () => {
 
-    const array = [{ nome: 'lucas1' }, { nome: 'lucas2' }, { nome: 'lucas3' }, { nome: 'lucas4' }, { nome: 'lucas5' }, { nome: 'lucas6' }, { nome: 'lucas7' },]
+    const { dataTopNews } = useContext(Context);
+
+    const handleNews = (url) => {
+        window.location.href = url;
+    }
 
     return (
         <section className='carouselNewsContainerBg'>
             <div className='carouselNewsContainer'>
-                {array.map(element => (<div key={element.nome}>{element.nome}</div>))}
-                {array.map(element => (<div key={element.nome}>{element.nome}</div>))}
+                {dataTopNews.feed.slice(10, 15).map(element => (<div onClick={() => handleNews(element.url)} key={element.title}>{element.title}</div>))}
+                {dataTopNews.feed.slice(10, 15).map(element => (<div onClick={() => handleNews(element.url)} key={element.title}>{element.title}</div>))}
             </div>
-
         </section>
     )
 }

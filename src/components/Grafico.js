@@ -52,9 +52,6 @@ export default function TradingViewWidget({ ticker }) {
   return (
     <div className='tradingview-widget-container'>
       <div id='tradingview_1bfb1' />
-      <div className="tradingview-widget-copyright">
-        <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
-      </div>
     </div>
   );
 }

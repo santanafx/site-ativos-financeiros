@@ -1,0 +1,19 @@
+.fundamentalData {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundamentalData p {
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.fundamentalData hr {
+    margin: 8px 0;
+}
+
+.fundamentalData span {
+    margin-top: 5px;
+    font-weight: 200;
+}

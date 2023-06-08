@@ -1,6 +1,6 @@
 .carouselNewsContainerBg {
     background-color: var(--verde);
-    width: calc(160px*7);
+    width: calc(210px*5);
     margin: auto;
     overflow: hidden;
     height: 30px;
@@ -9,7 +9,7 @@
 
 .carouselNewsContainer {
     display: flex;
-    width: calc(160px*14);
+    width: calc(210px*10);
     animation: slide 30s linear infinite;
 }
 
@@ -18,10 +18,22 @@
 }
 
 .carouselNewsContainer div {
+    font-size: 0.7rem;
     margin-right: 10px;
-    width: 150px;
+    width: 200px;
     background-color: var(--verde);
     height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: underline;
+    color: var(--branco);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.carouselNewsContainer div:hover {
+    opacity: 0.5;
 }
 
 
@@ -32,6 +44,6 @@
     }
 
     to {
-        transform: translateX(calc(-160px*7));
+        transform: translateX(calc(-210px*5));
     }
 }

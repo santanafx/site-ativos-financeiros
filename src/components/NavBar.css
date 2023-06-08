@@ -117,5 +117,17 @@
     font-size: 0.9rem;
     z-index: 1000;
     background-color: var(--verde);
-    padding: 5px 0 5px 230px;
+    padding: 5px 5px 5px 230px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navBarCarouselNews h2 {
+        padding: 5px 5px 5px 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navBarCarouselNews h2 {
+        padding: 5px 5px 5px 5px;
+    }
 }

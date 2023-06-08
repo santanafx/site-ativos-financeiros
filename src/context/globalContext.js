@@ -4,11 +4,13 @@ export const Context = React.createContext();
 
 export const ContextProvider = ({ children }) => {
     const API_KEY = 'QM1A1RWRLRYIUDUD';
-    let API_CALL = `https://www.alphavantage.co/query?function=NEWS_SENTIMENT&apikey=${API_KEY}`;
-    let API_CALL2 = `https://www.alphavantage.co/query?function=NEWS_SENTIMENT&topics=technology&apikey=${API_KEY}`;
+    let API_CALLTopNews = `https://www.alphavantage.co/query?function=NEWS_SENTIMENT&apikey=${API_KEY}`;
+    let API_CALLTechnology = `https://www.alphavantage.co/query?function=NEWS_SENTIMENT&topics=technology&apikey=${API_KEY}`;
+    let API_CALLIncomeTechnology = `https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=META&apikey=${API_KEY}`
+    const [dataTopNews, setDataTopNews] = React.useState(JSON.parse(localStorage.getItem('key')));
+    const [dataTechnology, setDataTechnology] = React.useState(JSON.parse(localStorage.getItem('key2')));
+    const [dataIncomeTechnology, setDataIncomeTechnology] = React.useState(JSON.parse(localStorage.getItem('key3')));
 
-    const [data, setData] = React.useState(JSON.parse(localStorage.getItem('key')));
-    const [data2, setData2] = React.useState(JSON.parse(localStorage.getItem('key2')));
 
     React.useEffect(() => {
         const apiCall = async (API, setData) => {
@@ -17,30 +19,42 @@ export const ContextProvider = ({ children }) => {
             setData(data);
         }
 
-        if (data === null) {
+        if (dataTopNews === null) {
             try {
-                apiCall(API_CALL, setData);
+                apiCall(API_CALLTopNews, setDataTopNews);
                 console.log('rodou')
             } catch {
-                console.log('API data falhou')
+                console.log('API falhou')
             }
         }
-        if (data2 === null) {
+
+        if (dataTechnology === null) {
             try {
-                apiCall(API_CALL2, setData2);
+                apiCall(API_CALLTechnology, setDataTechnology);
 
                 console.log('rodou')
             } catch {
-                console.log('API data2 falhou')
+                console.log('API falhou')
+            }
+        }
+
+        if (dataIncomeTechnology === null) {
+            try {
+                apiCall(API_CALLIncomeTechnology, setDataIncomeTechnology);
+
+                console.log('rodou')
+            } catch {
+                console.log('API falhou')
             }
         }
     }, [])
 
-    localStorage.setItem('key', JSON.stringify(data))
-    localStorage.setItem('key2', JSON.stringify(data2))
+    localStorage.setItem('key', JSON.stringify(dataTopNews))
+    localStorage.setItem('key2', JSON.stringify(dataTechnology))
+    localStorage.setItem('key3', JSON.stringify(dataIncomeTechnology))
 
     return (
-        <Context.Provider value={{ data, data2 }}>
+        <Context.Provider value={{ dataTopNews, dataTechnology, dataIncomeTechnology }}>
             {children}
         </Context.Provider>
     );
