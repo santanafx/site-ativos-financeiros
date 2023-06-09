@@ -1,7 +1,6 @@
 import React from 'react'
 import './NavBar.css'
 import { AiOutlineSearch } from "react-icons/ai";
-import { CarouselPrice } from './CarouselPrice';
 import { DropDownMenu } from './DropDownMenu';
 import { CarouselNews } from './CarouselNews';
 
@@ -10,9 +9,6 @@ import { CarouselNews } from './CarouselNews';
 export const NavBar = () => {
     return (
         <section className='navBarContainerBg'>
-            <div className='navBarCarousel'>
-                <CarouselPrice />
-            </div>
             <nav className='navBarContainer'>
                 <div className="navBarSearch">
                     <div>

@@ -7,6 +7,7 @@ let tvScriptLoadingPromise;
 export default function TradingViewWidget({ ticker }) {
   const onLoadScriptRef = useRef();
 
+
   useEffect(
     () => {
       onLoadScriptRef.current = createWidget;
@@ -28,20 +29,21 @@ export default function TradingViewWidget({ ticker }) {
       return () => onLoadScriptRef.current = null;
 
       function createWidget() {
-        if (document.getElementById('tradingview_1bfb1') && 'TradingView' in window) {
+
+        if (document.getElementById('tradingview_0c2fb') && 'TradingView' in window) {
           new window.TradingView.widget({
-            width: 480,
-            height: 480,
+            width: 450,
+            height: 450,
             symbol: ticker,
             interval: "1",
-            timezone: "America/Sao_Paulo",
+            timezone: "Etc/UTC",
             theme: "light",
             style: "1",
             locale: "en",
             toolbar_bg: "#f1f3f6",
             enable_publishing: false,
             allow_symbol_change: true,
-            container_id: "tradingview_1bfb1"
+            container_id: "tradingview_0c2fb"
           });
         }
       }
@@ -51,7 +53,7 @@ export default function TradingViewWidget({ ticker }) {
 
   return (
     <div className='tradingview-widget-container'>
-      <div id='tradingview_1bfb1' />
+      <div id='tradingview_0c2fb' />
     </div>
   );
 }

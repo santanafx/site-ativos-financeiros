@@ -3,11 +3,6 @@
     flex-direction: column;
 }
 
-.navBarCarousel {
-    background-color: var(--cinza);
-    border: 1px solid var(--cinza-escuro);
-}
-
 .navBarContainer {
     display: flex;
     justify-content: center;

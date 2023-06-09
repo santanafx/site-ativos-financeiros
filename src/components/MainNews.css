@@ -1,6 +1,14 @@
+.mainNews {
+    border-radius: 10px;
+    background-color: var(--cinza);
+    border-bottom: 5px solid var(--cinza-escuro);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 .mainNews img {
     cursor: pointer;
-    max-width: 700px;
     min-width: 480px;
     width: 100%;
     align-self: center;

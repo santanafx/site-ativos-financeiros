@@ -8,7 +8,6 @@ export const MainNews = ({ data, index }) => {
     return (
         <div className='mainNews'>
             <img onClick={() => handleNews(data.feed[0].url)} src={data.feed[0].banner_image} alt="" />
-            {/* <h6>{data.feed[0].topics[0].topic}</h6> */}
             <h1 onClick={() => handleNews(data.feed[0].url)}>{data.feed[0].title}</h1>
             <h4 onClick={() => handleNews(data.feed[0].url)}>{data.feed[0].summary}</h4>
             <div>
