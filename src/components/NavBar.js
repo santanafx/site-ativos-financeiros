@@ -3,16 +3,25 @@ import './NavBar.css'
 import { AiOutlineSearch } from "react-icons/ai";
 import { DropDownMenu } from './DropDownMenu';
 import { CarouselNews } from './CarouselNews';
-
-
+import { useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
 
+    const navigate = useNavigate();
     const [show, setShow] = React.useState(false);
     const refInput = React.useRef();
+    const [symbol, setSymbol] = React.useState('');
 
-    const handleClick = () => {
+    const handleSelectInput = () => {
         refInput.current.focus();
+    }
+
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            console.log('vc apertou enter')
+            navigate(`/grafico/${symbol}`)
+            window.location.reload();
+        }
     }
 
     return (
@@ -24,9 +33,9 @@ export const NavBar = () => {
                     </div>
                 </div>
                 <div className='navBarSearchInput'>
-                    {show ? <><input ref={refInput} type="text" required /><span onClick={() => { handleClick() }}>Search</span></> : ''}
+                    {show ? <><input ref={refInput} type="text" required onKeyPress={(event) => handleKeyPress(event)} onChange={(element) => setSymbol(element.target.value)} /><span onClick={() => { handleSelectInput() }}>Search</span></> : ''}
                 </div>
-                <div className='navBarLogo'>
+                <div onClick={() => navigate('/')} className='navBarLogo'>
                     Financial <span>News</span>
                 </div>
                 <div className='navBarLogin'>

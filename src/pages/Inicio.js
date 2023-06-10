@@ -3,7 +3,6 @@ import './Inicio.css'
 import { MainNews } from '../components/MainNews';
 import { SecundaryNews } from '../components/SecundaryNews';
 import { Context } from '../context/globalContext';
-import { FundamentalData } from '../components/FundamentalData';
 import TradingViewWidget from '../components/TradingViewWidget';
 import { MoreNews } from '../components/MoreNews';
 
@@ -24,7 +23,6 @@ export const Inicio = () => {
                             </div>
                             <div className='inicioGrafico'>
                                 <TradingViewWidget ticker={dataTopNews.feed[0].ticker_sentiment[0].ticker} />
-                                {/* <FundamentalData dataIncome={dataIncome} ticker={dataTopNews.feed[0].ticker_sentiment[0].ticker} /> */}
                             </div>
                             <div className='inicioSegundaNoticia'>
                                 <SecundaryNews data={dataTopNews} index={1} />
