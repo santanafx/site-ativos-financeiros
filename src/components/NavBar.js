@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavBar.css'
 import { AiOutlineSearch } from "react-icons/ai";
-import { DropDownMenu } from './DropDownMenu';
+import { Menu } from './Menu';
 import { CarouselNews } from './CarouselNews';
 import { useNavigate } from 'react-router-dom';
 
@@ -43,8 +43,8 @@ export const NavBar = () => {
                     <div>Login</div>
                 </div>
             </nav>
-            <div className='navBarDropDownMenu'>
-                <DropDownMenu />
+            <div className='navBarMenu'>
+                <Menu />
             </div>
             <div className='navBarCarouselNews'>
                 <h2>LAST NEWS</h2>

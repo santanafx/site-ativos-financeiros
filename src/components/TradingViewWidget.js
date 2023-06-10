@@ -32,8 +32,7 @@ export default function TradingViewWidget({ ticker }) {
 
         if (document.getElementById('tradingview_0c2fb') && 'TradingView' in window) {
           new window.TradingView.widget({
-            width: 450,
-            height: 450,
+            autosize: true,
             symbol: ticker,
             interval: "1",
             timezone: "Etc/UTC",
@@ -53,7 +52,7 @@ export default function TradingViewWidget({ ticker }) {
 
   return (
     <div className='tradingview-widget-container'>
-      <div id='tradingview_0c2fb' />
+      <div id='tradingview_0c2fb' style={{ height: '61vh' }} />
     </div>
   );
 }

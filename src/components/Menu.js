@@ -1,17 +1,17 @@
 import React from 'react'
-import './DropDownMenu.css'
+import './Menu.css'
 import { AiOutlineMenu } from "react-icons/ai";
 
-export const DropDownMenu = () => {
+export const Menu = () => {
     return (
-        <section className="dropDownMenuContainerBg">
-            <nav className="dropDownMenuContainer">
-                <div className='dropDownMenuIcon'>
+        <section className="MenuContainerBg">
+            <nav className="MenuContainer">
+                <div className='MenuIcon'>
                     <div>
                         <AiOutlineMenu />
                     </div>
                 </div>
-                <div className="dropDownMenuOpt">
+                <div className="MenuOpt">
                     <div>
                         <div>Market</div>
                         <div>Lists</div>
@@ -21,7 +21,7 @@ export const DropDownMenu = () => {
                         <div>Inovation</div>
                     </div>
                 </div>
-                <div className='dropDownMenuEmpty'>
+                <div className='MenuEmpty'>
                     <div></div>
                 </div>
             </nav>

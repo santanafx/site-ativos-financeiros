@@ -1,9 +1,9 @@
-.dropDownMenuContainerBg {
+.MenuContainerBg {
     color: var(--branco);
     width: 100%;
 }
 
-.dropDownMenuContainer {
+.MenuContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,14 +11,14 @@
     width: 100%;
 }
 
-.dropDownMenuIcon {
+.MenuIcon {
     flex-basis: 20%;
     margin-right: 10px;
     display: flex;
     justify-content: flex-end;
 }
 
-.dropDownMenuIcon div {
+.MenuIcon div {
 
     background-color: var(--preto);
     border-radius: 8px;
@@ -32,23 +32,23 @@
     cursor: pointer;
 }
 
-.dropDownMenuIcon div:hover {
+.MenuIcon div:hover {
     background-color: var(--branco);
     color: var(--preto);
     border: 2px solid var(--preto);
     opacity: 0.5;
 }
 
-.dropDownMenuOpt {
+.MenuOpt {
     flex-basis: 60%;
 }
 
-.dropDownMenuOpt div {
+.MenuOpt div {
     display: flex;
     margin-left: 30px;
 }
 
-.dropDownMenuOpt div div {
+.MenuOpt div div {
     margin-left: 0;
     font-weight: 100;
     cursor: pointer;
@@ -59,11 +59,11 @@
 
 }
 
-.dropDownMenuOpt div div:hover {
+.MenuOpt div div:hover {
     font-weight: 500;
 
 }
 
-.dropDownMenuEmpty {
+.MenuEmpty {
     flex-basis: 20%;
 }
