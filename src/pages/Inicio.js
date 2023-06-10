@@ -7,7 +7,7 @@ import TradingViewWidget from '../components/TradingViewWidget';
 import { MoreNews } from '../components/MoreNews';
 
 export const Inicio = () => {
-    const { dataTopNews, dataIncome } = React.useContext(Context);
+    const { dataTopNews } = React.useContext(Context);
     const [count, setCount] = React.useState(5);
 
 

@@ -1,9 +1,9 @@
-.MenuContainerBg {
+.menuContainerBg {
     color: var(--branco);
     width: 100%;
 }
 
-.MenuContainer {
+.menuContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,15 +11,77 @@
     width: 100%;
 }
 
-.MenuIcon {
+.menuIcon {
     flex-basis: 20%;
     margin-right: 10px;
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
-.MenuIcon div {
+.menuSideBarActive {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--preto);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
 
+.menuSideBarActive div {
+    transition: 0.1s;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.menuSideBarActive li {
+    transition: 0.1s;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.menuSideBarActive li:hover {
+    text-decoration: underline;
+    background-color: var(--verde);
+}
+
+.menuSideBarClose {
+    display: none;
+}
+
+.menuSideBarActive div:hover {
+    text-decoration: underline;
+    background-color: var(--verde);
+}
+
+.marketArrowActive div {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.marketArrowActive svg {
+    margin-right: 20px;
+}
+
+.marketArrowClose div {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.marketArrowClose svg {
+    margin-right: 20px;
+}
+
+
+.menuIconLupa {
     background-color: var(--preto);
     border-radius: 8px;
     border: 2px solid var(--branco);
@@ -32,23 +94,24 @@
     cursor: pointer;
 }
 
-.MenuIcon div:hover {
+.menuIconLupa:hover {
     background-color: var(--branco);
     color: var(--preto);
     border: 2px solid var(--preto);
     opacity: 0.5;
 }
 
-.MenuOpt {
+.menuOpt {
     flex-basis: 60%;
+    user-select: none;
 }
 
-.MenuOpt div {
+.menuOpt div {
     display: flex;
     margin-left: 30px;
 }
 
-.MenuOpt div div {
+.menuOpt div div {
     margin-left: 0;
     font-weight: 100;
     cursor: pointer;
@@ -59,11 +122,11 @@
 
 }
 
-.MenuOpt div div:hover {
+.menuOpt div div:hover {
     font-weight: 500;
 
 }
 
-.MenuEmpty {
+.menuEmpty {
     flex-basis: 20%;
 }

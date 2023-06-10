@@ -141,9 +141,10 @@
     color: var(--branco);
     left: 0;
     font-size: 0.9rem;
-    z-index: 1000;
+    z-index: 3;
     background-color: var(--verde);
     padding: 5px 5px 5px 230px;
+    user-select: none;
 }
 
 @media screen and (max-width: 1000px) {
