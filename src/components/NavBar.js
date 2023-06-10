@@ -26,6 +26,9 @@ export const NavBar = () => {
 
     return (
         <section className='navBarContainerBg'>
+            <div onClick={() => navigate('/')} className='navBarLogoResponsivo'>
+                Financial <span>News</span>
+            </div>
             <nav className='navBarContainer'>
                 <div className="navBarSearch">
                     <div onClick={() => setShow(!show)}>

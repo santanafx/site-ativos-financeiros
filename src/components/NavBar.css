@@ -11,6 +11,10 @@
     height: 100px;
 }
 
+.navBarLogoResponsivo {
+    display: none;
+}
+
 .navBarSearch {
     flex-basis: 20%;
     margin-right: 10px;
@@ -148,13 +152,97 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .navBarContainer {
+        position: relative;
+    }
+
+    .navBarSearch {
+        position: absolute;
+        left: 0;
+        margin-left: 50px;
+
+    }
+
+    .navBarSearchInput {
+        position: absolute;
+        left: 0;
+        margin-left: 90px;
+    }
+
+    .navBarSearchInput input {
+        width: 120px;
+    }
+
+    .navBarLogo {
+        position: absolute;
+        left: 0;
+        margin-left: 230px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navBarLogin {
+        position: absolute;
+        right: 0;
+        margin-right: 50px;
+    }
+
     .navBarCarouselNews h2 {
         padding: 5px 5px 5px 50px;
     }
+
+
 }
 
 @media screen and (max-width: 700px) {
+
+    .navBarLogoResponsivo {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .navBarLogoResponsivo:hover {
+        opacity: 0.5;
+    }
+
+    .navBarLogoResponsivo span {
+        color: var(--verde);
+    }
+
+    .navBarContainer {
+        position: relative;
+    }
+
+    .navBarSearch {
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
+
+    }
+
+    .navBarSearchInput {
+        position: absolute;
+        left: 0;
+        margin-left: 50px;
+    }
+
+    .navBarLogo {
+        display: none;
+    }
+
+    .navBarLogin {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
+
     .navBarCarouselNews h2 {
-        padding: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 15px;
     }
 }
