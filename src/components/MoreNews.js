@@ -15,7 +15,7 @@ export const MoreNews = ({ data, index }) => {
             {/* <h1 className='inicioTitle'>MORE NEWS</h1> */}
             <div className='moreNews' >
                 {newData.slice(indexInicial, index).map(element =>
-                    <div className="moreNewsContainer">
+                    <div className="moreNewsContainer" key={element.title}>
                         <img onClick={() => handleNews(element.url)} src={element.banner_image} alt="" />
                         <h1 onClick={() => handleNews(element.url)}>{element.title}</h1>
                         <h4 onClick={() => handleNews(element.url)}>{element.summary}</h4>

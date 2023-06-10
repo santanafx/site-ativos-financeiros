@@ -35,13 +35,43 @@
     opacity: 0.5;
 }
 
+.navBarSearchInput {
+    flex-basis: 20%;
+    display: flex;
+    position: relative;
+}
+
+.navBarSearchInput input {
+    padding: 5px 15px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    color: var(--cinza-escuro);
+}
+
+.navBarSearchInput input:valid~span,
+.navBarSearchInput input:focus~span {
+    color: var(--verde);
+    transform: translateX(10px) translateY(-30px);
+}
+
+.navBarSearchInput span {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    color: var(--cinza-escuro);
+    border-radius: 5px;
+    transition: 0.5s;
+    user-select: none;
+}
+
+
 .navBarLogo {
-    flex-basis: 60%;
+    flex-basis: 40%;
     font-size: 3rem;
     display: flex;
-    justify-content: center;
     transition: 0.3s;
     cursor: pointer;
+    user-select: none;
 }
 
 .navBarLogo:hover {
@@ -56,6 +86,7 @@
     flex-basis: 20%;
     display: flex;
     justify-content: flex-start;
+    user-select: none;
 }
 
 .navBarLogin div:nth-child(1) {

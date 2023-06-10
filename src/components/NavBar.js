@@ -7,13 +7,24 @@ import { CarouselNews } from './CarouselNews';
 
 
 export const NavBar = () => {
+
+    const [show, setShow] = React.useState(false);
+    const refInput = React.useRef();
+
+    const handleClick = () => {
+        refInput.current.focus();
+    }
+
     return (
         <section className='navBarContainerBg'>
             <nav className='navBarContainer'>
                 <div className="navBarSearch">
-                    <div>
+                    <div onClick={() => setShow(!show)}>
                         <AiOutlineSearch />
                     </div>
+                </div>
+                <div className='navBarSearchInput'>
+                    {show ? <><input ref={refInput} type="text" required /><span onClick={() => { handleClick() }}>Search</span></> : ''}
                 </div>
                 <div className='navBarLogo'>
                     Financial <span>News</span>
