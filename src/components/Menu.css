@@ -1,6 +1,7 @@
 .menuContainerBg {
     color: var(--branco);
     width: 100%;
+    position: relative;
 }
 
 .menuContainer {
@@ -102,30 +103,88 @@
     opacity: 0.5;
 }
 
-.menuOpt {
+.menuOptContainerBg {
     flex-basis: 60%;
     user-select: none;
 }
 
-.menuOpt div {
+.menuOptContainer {
     display: flex;
     margin-left: 30px;
 }
 
-.menuOpt div div {
-    margin-left: 0;
+.menuOptContainer a {
+    margin-left: 20px;
     font-weight: 100;
     cursor: pointer;
     flex-basis: 90px;
     width: 90px;
     display: flex;
     justify-content: center;
-
+    padding: 15px 15px;
+    color: var(--branco);
+    text-decoration: none;
 }
 
-.menuOpt div div:hover {
+.menuOptContainer a:hover {
     font-weight: 500;
+    background-color: var(--verde);
+}
 
+.menuOptMarketClose {
+    display: none;
+}
+
+.menuOptMarketActive {
+    position: absolute;
+    background-color: var(--preto);
+    width: 100%;
+    height: 300px;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+}
+
+.menuOptMarketActive div {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.menuOptMarketActive div img {
+    width: 100%;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.menuOptMarketActive div img:hover {
+    opacity: 0.5;
+}
+
+.menuOptMarketActive div h2 {
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.menuOptMarketActive div h2:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.menuOptMarketActive li {
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menuOptMarketActive li:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.menuOptMarketActive div h1 {
+    font-size: 1.4rem;
 }
 
 .menuEmpty {
@@ -137,8 +196,14 @@
         position: relative;
     }
 
-    .menuOpt {
-        display: none;
+    .menuSideBarActive {
+        left: -50px;
+    }
+
+    .menuOptContainerBg {
+        position: absolute;
+        left: 0;
+        margin-left: 50px;
     }
 
     .menuIcon {
@@ -149,11 +214,16 @@
 }
 
 @media screen and (max-width: 700px) {
+    .menuSideBarActive {
+        left: -10px;
+    }
 
+    .menuOptContainerBg {
+        display: none;
+    }
 
     .menuIcon {
         margin-left: 10px;
 
     }
-
 }

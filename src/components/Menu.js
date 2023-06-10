@@ -2,11 +2,15 @@ import React from 'react'
 import './Menu.css'
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillArrowUpCircleFill, BsFillArrowDownCircleFill } from "react-icons/bs";
+import top5Stocks from '../images/top-5-stocks.jpg'
+import tesla from '../images/tesla.jpg'
+import majorIndex from '../images/major-index.jpg'
 
 
 export const Menu = () => {
 
     const [showSideBarMenu, setShowSideBarMenu] = React.useState(false);
+    const [showDropDownMainMenu, setShowDropDownMainMenu] = React.useState(false);
     const [changeArrowMarket, setChangeArrowMarket] = React.useState(false);
     const [changeArrowList, setChangeArrowList] = React.useState(false);
 
@@ -44,16 +48,39 @@ export const Menu = () => {
                         <div>Inovation</div>
                     </div>
                 </div>
-                <div className="menuOpt">
-                    <div>
-                        <div>Market</div>
-                        <div>Lists</div>
-                        <div>Webseries</div>
-                        <div>Tech</div>
-                        <div>Cripto</div>
-                        <div>Inovation</div>
+                <nav className="menuOptContainerBg">
+                    <div className='menuOptContainer'>
+                        <div onMouseEnter={() => setShowDropDownMainMenu(!showDropDownMainMenu)} onMouseLeave={() => setShowDropDownMainMenu(!showDropDownMainMenu)}>
+                            <a href='/#' >Market</a>
+                            <div className={showDropDownMainMenu ? 'menuOptMarketActive' : 'menuOptMarketClose'}>
+                                <div>
+                                    <h1>Markets</h1>
+                                    <li>Top 5 best stocks</li>
+                                    <li>Top 10 best performance stocks</li>
+                                    <li>Top 3 best index</li>
+                                </div>
+                                <div onClick={() => window.location.href = 'https://www.investors.com/research/best-stocks-to-buy-now'}>
+                                    <img src={top5Stocks} alt="Imagem ilustrativa de notícia de ações" />
+                                    <h2>5 Best Growth Stocks to Invest in Now, According to Analysts</h2>
+                                </div>
+                                <div onClick={() => window.location.href = 'https://finance.yahoo.com/news/12-best-performing-p-500-153949541.html'}>
+                                    <img src={tesla} alt="Imagem ilustrativa Top 10 performance ações." />
+                                    <h2>5 Best Growth Stocks to Invest in Now, According to Analysts</h2>
+                                </div>
+                                <div onClick={() => window.location.href = 'https://finance.yahoo.com/world-indices/'}>
+                                    <img src={majorIndex} alt="Imagem ilustrativa Top 10 performance ações." />
+                                    <h2>Major world index.</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href='/#'>Lists</a>
+                        <a href='/#'>Webseries</a>
+                        <a href='/#'>Tech</a>
+                        <a href='/#'>Cripto</a>
+                        <a href='/#'>Inovation</a>
                     </div>
-                </div>
+                </nav>
                 <div className='menuEmpty'>
                     <div></div>
                 </div>

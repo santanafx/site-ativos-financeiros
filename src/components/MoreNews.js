@@ -12,7 +12,6 @@ export const MoreNews = ({ data, index }) => {
 
     return (
         <>
-            {/* <h1 className='inicioTitle'>MORE NEWS</h1> */}
             <div className='moreNews' >
                 {newData.slice(indexInicial, index).map(element =>
                     <div className="moreNewsContainer" key={element.title}>

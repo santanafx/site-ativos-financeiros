@@ -18,7 +18,6 @@ export const NavBar = () => {
 
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
-            console.log('vc apertou enter')
             navigate(`/grafico/${symbol}`)
             window.location.reload();
         }
