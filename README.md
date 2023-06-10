@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Sobre o projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="justify">O projeto consistiu em criar uma loja virtual. Quando a página é acessada, todos os itens das coleções "Men" e "Women" são mostrados na página inicial (Collections). Os itens há venda são todos renderizados com informações coletadas de um banco de dados que contém todas as informações do protudo, como, preço, desconto, imagens do produto, categoria, coleção, etc. O menu de navegação fornece ao usuário opções de navegação para filtrar os itens de acordo com sua vontade. Quando um item é selecionado, é aberto a página com informações do produto, preço, desconto e funcionalidade de adicionar um determinado número de itens no carrinho de comprar. Os itens no carrinho de compras são atualizados dinâmicamente no icone de carrinho do menu superior. É possível clicar em cima da imagem do produto desejado no carrinho para ver todas as imagens do produto. </p>
 
-## Available Scripts
+## Acesse
 
-In the project directory, you can run:
+<a href="https://ecommerce-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
 
-### `npm start`
+## Imagens do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Gif Projeto](./src/videos/desktop-gif.gif)
+![Gif Projeto](./src/videos/desktop-gif-2.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Linguagens utilizadas
 
-### `npm test`
+JavaScript | React | HTML | CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Rafa-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+</div>
 
-### `npm run build`
+## Como instalar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para preparar o ambiente, precisaremos ter algumas coisas instaladas no computador, sendo elas:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Node.js
+<a href="https://nodejs.org/pt-br">Clique aqui para instalar o Node.js</a>.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="justify">
+Para instalar o Node, clique no link e baixe a versão LTS (versão recomendada)
+Para verificar se foi instalado corretamente, abra o terminal e escreva node -v ou node --version
+alt text: site do Nodejs, com o botão da versão recomendada em foco por um quadrado vermelho!
+</p>
 
-### `npm run eject`
+<img align="center" src='./src/images/readme/instrucao-node.png'>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Git
+<a href="https://git-scm.com/download/windows">Clique aqui para instalar o Git</a>.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="justify">
+Caso não tenha um terminal de preferência, recomendo utilizar o git bash. Para instalá-lo, haverá uma opção durante a instalação do git para permitir instalar o git bash
+alt text: imagem mostrando várias caixas selecionáveis. A caixa “Git Bash Here” está em evidência por um quadrado vermelho com uma seta apontada para ele
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img align="center" src='./src/images/readme/instrucao-git.png'>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para verificar se o git foi instalado corretamente, abra o terminal e escreva git --version
+Visual Studio Code
 
-## Learn More
+Entre no link e baixe a versão de Windows.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a href="https://code.visualstudio.com/download">Clique aqui para instalar o Visual Studio</a>.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clique com o botão direito em algum local do computador e selecione a opção Git Bash Here.
 
-### Code Splitting
+<img align="center" src='./src/images/readme/instrucao-gitBashHere.png'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Escreva no terminal o comando abaixo e no lugar de 'cole aqui' entre no projeto do GitHub e cole o link do projeto.
 
-### Analyzing the Bundle Size
+git clone 'cole aqui o link do projeto'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img align="center" src='./src/images/readme/instrucao-clone.png'>
 
-### Making a Progressive Web App
+<img align="center" src='./src/images/readme/instrucao-gitClone.png'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Uma pasta com o projeto desejado será adicionada a pasta em que foi escolhida.
+Clique com o botão direito em cima da pasta e selecione "Abrir com Code"
 
-### Advanced Configuration
+<img align="center" src='./src/images/readme/instrucao-abrirCode.png'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o terminal clicando no menu da aba superior e digite no terminal aberto o código "npm install" e logo em seguida digite "npm start". Uma janela do browser será aberta e o projeto será iniciado em seu computador.
 
-### Deployment
+<img align="center" src='./src/images/readme/instrucao-terminal.png'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img align="center" src='./src/images/readme/instrucao-npm.png'>

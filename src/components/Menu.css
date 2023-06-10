@@ -59,7 +59,7 @@
 .marketArrowActive div {
     display: flex;
     justify-content: space-between;
-    user-select: none;
+
     padding: 0 !important;
     cursor: pointer;
 }
@@ -71,7 +71,7 @@
 .marketArrowClose div {
     display: flex;
     justify-content: space-between;
-    user-select: none;
+
     padding: 0 !important;
     cursor: pointer;
 }
