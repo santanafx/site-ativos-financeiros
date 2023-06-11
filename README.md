@@ -76,3 +76,18 @@ Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o termin
 <img align="center" src='./src/images/readme/instrucao-terminal.png'>
 
 <img align="center" src='./src/images/readme/instrucao-npm.png'>
+
+<br />
+
+# :sunglasses: Autor <a name="id07"></a>
+
+<br />
+
+Lucas Santana Figueiredo
+
+<div> 
+ <a href="https://discordapp.com/users/254746660549296128" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
+  <a href = "mailto:santanafx@hotmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/lucas-santana-figueiredo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://wa.me/5531997915854" target="_blank"><img src=https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white></a> 
+</div>
