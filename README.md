@@ -7,8 +7,11 @@ Além disso, foi adicionada a funcionalidade de paginação ao final da página,
 Para melhorar a experiência de navegação, foram adicionados menus suspensos (dropdown menus). </p>
 
 ## Imagens do projeto
+<img align="center" src='./src/images/readme/img-1.png'>
+<img align="center" src='./src/images/readme/img-2.png'>
+<img align="center" src='./src/images/readme/img-3.png'>
+<img align="center" src='./src/images/readme/img-4.png'>
 
-![Gif Projeto](./src/videos/demo.gif)
 
 ## Linguagens utilizadas
 
