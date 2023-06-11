@@ -8,8 +8,7 @@ Para melhorar a experiência de navegação, foram adicionados menus suspensos (
 
 ## Imagens do projeto
 
-![Gif Projeto](./src/videos/desktop-gif.gif)
-![Gif Projeto](./src/videos/desktop-gif-2.gif)
+![Gif Projeto](./src/videos/demo.gif)
 
 ## Linguagens utilizadas
 
