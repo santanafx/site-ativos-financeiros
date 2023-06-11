@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/site-ativos-financeiros/static/css/main.4fdd3749.css",
+    "main.js": "/site-ativos-financeiros/static/js/main.b3fc2272.js",
+    "static/media/tesla.jpg": "/site-ativos-financeiros/static/media/tesla.519b087e71ad535754a7.jpg",
+    "static/media/top-5-stocks.jpg": "/site-ativos-financeiros/static/media/top-5-stocks.83bf95742d791787e343.jpg",
+    "static/media/major-index.jpg": "/site-ativos-financeiros/static/media/major-index.81e1e710c28574a56b61.jpg",
+    "index.html": "/site-ativos-financeiros/index.html",
+    "main.4fdd3749.css.map": "/site-ativos-financeiros/static/css/main.4fdd3749.css.map",
+    "main.b3fc2272.js.map": "/site-ativos-financeiros/static/js/main.b3fc2272.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fdd3749.css",
+    "static/js/main.b3fc2272.js"
+  ]
+}
