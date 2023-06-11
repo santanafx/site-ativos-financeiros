@@ -1,10 +1,10 @@
 # Sobre o projeto
 
-<p align="justify">O projeto consistiu em criar um site de notícias do mercado financeiro. Quando a página é acessada, é realizado o consumo da API da Alpha Vantage para coletar as últimas notícias do mercado financeiro. Na seção "Top News", é carregado as 5 notícias mais relevantes e um gráfico (widget do tradinview) com o ticker relacionado a notícia principal do dia. No fim da página, foi adicionado a funcionalidade de pagination onde, o usuário pode carregar mais notícias. O menu de navegação fornece ao usuário a opção de procurar por um ticker em específico, um carrossel com efeito de parar quando o usuário passar o mouse por cima, funcionalidade de clicar na notícia e redirecionar para o site de origem e dropdown menus. </p>
+<p align="justify">O projeto consistiu na criação de um site de notícias voltado para o mercado financeiro. Ao acessar a página, é feito o consumo da API da Alpha Vantage para obter as últimas notícias do mercado financeiro. Na seção "Top News", são exibidas as 5 notícias mais relevantes, acompanhadas por um gráfico (utilizando o widget do TradingView) com o ticker relacionado à notícia principal do dia.
 
-## Acesse
+Além disso, foi adicionada a funcionalidade de paginação ao final da página, permitindo que o usuário carregue mais notícias conforme desejar. O menu de navegação oferece ao usuário a opção de procurar por um ticker específico. Também foi implementado um carrossel com efeito de pausa quando o usuário passa o mouse sobre ele, e ao clicar em uma notícia, o usuário é redirecionado para o site de origem da notícia.
 
-<a href="https://ecommerce-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
+Para melhorar a experiência de navegação, foram adicionados menus suspensos (dropdown menus). </p>
 
 ## Imagens do projeto
 
