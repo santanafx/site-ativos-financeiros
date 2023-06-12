@@ -1,15 +1,16 @@
 # Sobre o projeto
 
-<p align="justify">O projeto consistiu em criar um site de notícias do mercado financeiro. Quando a página é acessada, é realizado o consumo da API da Alpha Vantage para coletar as últimas notícias do mercado financeiro. Na seção "Top News", é carregado as 5 notícias mais relevantes e um gráfico (widget do tradinview) com o ticker relacionado a notícia principal do dia. No fim da página, foi adicionado a funcionalidade de pagination onde, o usuário pode carregar mais notícias. O menu de navegação fornece ao usuário a opção de procurar por um ticker em específico, um carrossel com efeito de parar quando o usuário passar o mouse por cima, funcionalidade de clicar na notícia e redirecionar para o site de origem e dropdown menus. </p>
+<p align="justify">O projeto consistiu na criação de um site de notícias voltado para o mercado financeiro. Ao acessar a página, é feito o consumo da API da Alpha Vantage para obter as últimas notícias do mercado financeiro. Na seção "Top News", são exibidas as 5 notícias mais relevantes, acompanhadas por um gráfico (utilizando o widget do TradingView) com o ticker relacionado à notícia principal do dia.
 
-## Acesse
+Além disso, foi adicionada a funcionalidade de paginação ao final da página, permitindo que o usuário carregue mais notícias conforme desejar. O menu de navegação oferece ao usuário a opção de procurar por um ticker específico. Também foi implementado um carrossel com efeito de pausa quando o usuário passa o mouse sobre ele, e ao clicar em uma notícia, o usuário é redirecionado para o site de origem da notícia.
 
-<a href="https://ecommerce-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
+Para melhorar a experiência de navegação, foram adicionados menus suspensos (dropdown menus). </p>
 
 ## Imagens do projeto
 
-![Gif Projeto](./src/videos/desktop-gif.gif)
-![Gif Projeto](./src/videos/desktop-gif-2.gif)
+https://www.youtube.com/watch?v=x1SBv3wJi0Q
+
+https://www.youtube.com/watch?v=-XOf9Le73jY
 
 ## Linguagens utilizadas
 
@@ -76,3 +77,18 @@ Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o termin
 <img align="center" src='./src/images/readme/instrucao-terminal.png'>
 
 <img align="center" src='./src/images/readme/instrucao-npm.png'>
+
+<br />
+
+# :sunglasses: Autor <a name="id07"></a>
+
+<br />
+
+Lucas Santana Figueiredo
+
+<div> 
+ <a href="https://discordapp.com/users/254746660549296128" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
+  <a href = "mailto:santanafx@hotmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/lucas-santana-figueiredo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://wa.me/5531997915854" target="_blank"><img src=https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white></a> 
+</div>
