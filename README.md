@@ -6,6 +6,10 @@ Além disso, foi adicionada a funcionalidade de paginação ao final da página,
 
 Para melhorar a experiência de navegação, foram adicionados menus suspensos (dropdown menus). </p>
 
+## Acesse
+
+<a href="https://site-ativos-financeiros.vercel.app/">Acesse a aplicação clicando aqui</a>.
+
 ## Imagens do projeto
 
 https://www.youtube.com/watch?v=x1SBv3wJi0Q
